@@ -2,6 +2,6 @@ FROM node:latest
 WORKDIR /software/GraphQlTransport
 ADD GraphQlTransport /software/GraphQlTransport
 RUN npm install
-ENTRYPOINT ["node server.js"]
+CMD ["npm", "start"]
 
 MAINTAINER tomyitav@gmail.com
